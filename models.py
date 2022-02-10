@@ -97,7 +97,7 @@ class Heads(nn.Module):
         # print('center', centerness.shape)
         # print('class', classification.shape)
 
-        return torch.cat([reg, centerness, classification], dim=1)
+        return torch.cat([reg, centerness, classification], dim=1)  # TODO: could be implemented in another format
 
 
 class FCOS(nn.Module):
