@@ -1,10 +1,10 @@
 from logging import root
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 import pandas as pd
 import os, io
 
 
-class FCOSDataset(Dataset):
+class FCOSDataset(torch.utils.data.Dataset):
     def __init__(self, csv_file, root_dir, num_classes=10) -> None:
         """
         Args:
